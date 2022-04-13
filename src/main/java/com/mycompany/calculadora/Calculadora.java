@@ -12,7 +12,7 @@ package com.mycompany.calculadora;
 public class Calculadora {
     
     private double numero1;
-    private double n2;
+    private double numero2;
     private double resultado;
     
     public Calculadora(){
@@ -21,15 +21,15 @@ public class Calculadora {
     
     public Calculadora(double n1,double n2){
         this.numero1 = n1;
-        this.n2 = n2;
+        this.numero2 = n2;
     }
     
     public void adicao(){
-        resultado = numero1 + n2;
+        resultado = numero1 + numero2;
     }
     
     public double subtracao(){
-        return (numero1 - n2);
+        return (numero1 - numero2);
     }
     
     public void multiplicacao(double v1, double v2){
@@ -37,18 +37,18 @@ public class Calculadora {
     }
     
     public double divisao(){
-        if(n2 != 0)
-            return(numero1 / n2);
+        if(numero2 != 0)
+            return(numero1 / numero2);
         else
             return 0;
     }
     
     public double potenciacao(){
-        return (Math.pow(numero1, n2));
+        return (Math.pow(numero1, numero2));
     }
     
     public void radiciacao(){
-        resultado = Math.pow(numero1,1.0/n2);
+        resultado = Math.pow(numero1,1.0/numero2);
     }
 
     public double getN1() {
@@ -60,11 +60,11 @@ public class Calculadora {
     }
 
     public double getN2() {
-        return n2;
+        return numero2;
     }
 
     public void setN2(double n2) {
-        this.n2 = n2;
+        this.numero2 = n2;
     }
 
     public double getResultado() {

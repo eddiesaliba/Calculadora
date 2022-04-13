@@ -11,8 +11,8 @@ package com.mycompany.calculadora;
  */
 public class Calculadora {
     
-    private double numero1;
-    private double numero2;
+    private double n1;
+    private double n2;
     private double resultado;
     
     public Calculadora(){
@@ -20,16 +20,16 @@ public class Calculadora {
     }
     
     public Calculadora(double n1,double n2){
-        this.numero1 = n1;
-        this.numero2 = n2;
+        this.n1 = n1;
+        this.n2 = n2;
     }
     
     public void adicao(){
-        resultado = numero1 + numero2;
+        resultado = n1 + n2;
     }
     
     public double subtracao(){
-        return (numero1 - numero2);
+        return (n1 - n2);
     }
     
     public void multiplicacao(double v1, double v2){
@@ -37,34 +37,34 @@ public class Calculadora {
     }
     
     public double divisao(){
-        if(numero2 != 0)
-            return(numero1 / numero2);
+        if(n2 != 0)
+            return(n1 / n2);
         else
             return 0;
     }
     
     public double potenciacao(){
-        return (Math.pow(numero1, numero2));
+        return (Math.pow(n1, n2));
     }
     
     public void radiciacao(){
-        resultado = Math.pow(numero1,1.0/numero2);
+        resultado = Math.pow(n1,1.0/n2);
     }
 
     public double getN1() {
-        return numero1;
+        return n1;
     }
 
     public void setN1(double n1) {
-        this.numero1 = n1;
+        this.n1 = n1;
     }
 
     public double getN2() {
-        return numero2;
+        return n2;
     }
 
     public void setN2(double n2) {
-        this.numero2 = n2;
+        this.n2 = n2;
     }
 
     public double getResultado() {

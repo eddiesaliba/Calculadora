@@ -13,7 +13,7 @@ public class Calculadora {
     
     private double numero1;
     private double n2;
-    private double resultado;
+    private double res;
     
     public Calculadora(){
         
@@ -25,7 +25,7 @@ public class Calculadora {
     }
     
     public void adicao(){
-        resultado = numero1 + n2;
+        res = numero1 + n2;
     }
     
     public double subtracao(){
@@ -33,7 +33,7 @@ public class Calculadora {
     }
     
     public void multiplicacao(double v1, double v2){
-        resultado = v1 * v2;
+        res = v1 * v2;
     }
     
     public double divisao(){
@@ -48,7 +48,7 @@ public class Calculadora {
     }
     
     public void radiciacao(){
-        resultado = Math.pow(numero1,1.0/n2);
+        res = Math.pow(numero1,1.0/n2);
     }
 
     public double getN1() {
@@ -68,6 +68,6 @@ public class Calculadora {
     }
 
     public double getResultado() {
-        return resultado;
+        return res;
     }
 }
